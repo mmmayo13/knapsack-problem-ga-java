@@ -349,7 +349,7 @@ public class KnapsackProblem {
                 mut_point = generator.nextInt(number_of_items);
                 if(mut_gene.substring(mut_point, mut_point + 1).equals("1")) {
                     new_mut_gene = mut_gene.substring(0, mut_point) + "0" + mut_gene.substring(mut_point);
-                    breed_population.set(breed_population.size() - 1, new_mut_gene);
+                    breed_population.set(breed_population.size() - 2, new_mut_gene);
                 }
                 if(mut_gene.substring(mut_point, mut_point + 1).equals("0")) {
                     new_mut_gene = mut_gene.substring(0, mut_point) + "1" + mut_gene.substring(mut_point);
